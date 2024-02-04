@@ -1,9 +1,10 @@
-import Image from "next/image";
+
 import Button from "./Accesories/Button";
 import Title from "./Accesories/Title";
 import Logo from "./Logo";
 
 export default function Home() {
+  
   return (
     <>
       <div>
@@ -13,8 +14,8 @@ export default function Home() {
           className="absolute right-5 w-[605px] h-[660px] rounded-[30px] top-[20px] bottom-[0px] "
         ></img>
         <div className='flex gap-[20px] absolute right-[50px] top-[40px] '>
-          <Button title="LOGIN"></Button>
-          <Button title="ABOUT US"></Button>
+          <Button title="LOGIN" goto="/Login"></Button>
+          <Button title="ABOUT US" goto="/Aboutus" ></Button>
         </div>
         <Title></Title>
       </div>
