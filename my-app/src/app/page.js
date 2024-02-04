@@ -14,7 +14,7 @@ export default function Home() {
           className="absolute right-5 w-[605px] h-[660px] rounded-[30px] top-[20px] bottom-[0px] "
         ></img>
         <div className='flex gap-[20px] absolute right-[50px] top-[40px] '>
-          <Button title="LOGIN" goto="/Login"></Button>
+          <Button title="PROJECT INFO" goto="/Dash"></Button>
           <Button title="ABOUT US" goto="/Aboutus" ></Button>
         </div>
         <Title></Title>
