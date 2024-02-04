@@ -4,7 +4,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 // import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 export default function Member({avatar, name, role}) {
   return (
-    <div className="w-[300px] h-[350px] bg-[#ABF698] rounded-[40px] hover:scale-110 hover:transition hover:duration-1000">
+    <div className="w-[300px] h-[350px] bg-[#ABF698] rounded-[40px] hover:scale-105 hover:transition hover:duration-300">
       <img
         src={avatar}
         className="w-[110px] relative top-[5%] left-[30%] mb-[15px]"
