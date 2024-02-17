@@ -3,9 +3,9 @@ import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 // import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-export default function Member({avatar, name, role}) {
+export default function Member({ avatar, name, role }) {
   return (
-    <div className="w-[300px] h-[350px] bg-[#ABF698] rounded-[40px] hover:scale-105 hover:transition hover:duration-300">
+    <div className="w-[300px] h-[350px] bg-[#ABF698] rounded-[40px] hover:scale-105 hover:transition ease-in-out duration-[800ms]">
       <img
         src={avatar}
         className="w-[110px] relative top-[5%] left-[30%] mb-[15px]"
@@ -17,8 +17,14 @@ export default function Member({avatar, name, role}) {
         {role}
       </p>
 
-          <LinkedInIcon sx={{fontSize: 45}} className="relative top-[15%] left-[30%]"/>
-          <EmailOutlinedIcon sx={{ fontSize: 45 }} className="relative top-[15%] left-[38%]"/>
+      <LinkedInIcon
+        sx={{ fontSize: 45 }}
+        className="relative top-[15%] left-[30%]"
+      />
+      <EmailOutlinedIcon
+        sx={{ fontSize: 45 }}
+        className="relative top-[15%] left-[38%]"
+      />
     </div>
   );
 }
