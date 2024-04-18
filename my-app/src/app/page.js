@@ -6,7 +6,7 @@ import Logo from "./Logo";
 export default function Home() {
   
   return (
-    <>
+    
       <div>
         <Logo />
         <img
@@ -22,6 +22,10 @@ export default function Home() {
         </div>
         <Title></Title>
       </div>
-    </>
+
+  
+  
+
+    
   );
 }

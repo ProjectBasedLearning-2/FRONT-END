@@ -18,7 +18,9 @@ export default function Box(props) {
         placeholder="FEEDBACK"
         className="w-[100%] border-2 border-solid-black py-[100px] px-[30px] rounded-[20px] mb-[35px]"
       ></input>
-      <button className="w-[100%] py-[25px] rounded-[20px] bg-[#B9FFB7] font-semibold hover:scale-[1.012]">SUBMIT</button>
+      <button className="w-[100%] py-[25px] rounded-[20px] bg-[#B9FFB7] font-semibold hover:scale-[1.03] hover:transition ease-in-out duration-[800ms]">
+        SUBMIT
+      </button>
     </div>
   );
 }
