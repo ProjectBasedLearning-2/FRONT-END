@@ -43,20 +43,30 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h2>Dashboard</h2>
+            <h2 className='text-[30px] absolute top-[3%] left-[45%]'>Dashboard</h2>
             <form onSubmit={handleSubmit}>
-                <input type="number" id="Temperature" placeholder="Temperature" required value={Temperature} onChange={(e) => setTemperature(e.target.value)} />
-                <input type="number" id="Humidity" placeholder="Humidity" required value={Humidity} onChange={(e) => setHumidity(e.target.value)} />
-                <input type="number" id="Moisture" placeholder="Moisture" required value={Moisture} onChange={(e) => setMoisture(e.target.value)} />
-                <input type="text" id="SoilType" placeholder="Soil Type" required value={SoilType} onChange={(e) => setSoilType(e.target.value)} />
-                <input type="text" id="CropType" placeholder="Crop Type" required value={CropType} onChange={(e) => setCropType(e.target.value)} />
-                <input type="number" id="N" placeholder="N" required value={N} onChange={(e) => setN(e.target.value)} />
-                <input type="number" id="P" placeholder="P" required value={P} onChange={(e) => setP(e.target.value)} />
-                <input type="number" id="K" placeholder="K" required value={K} onChange={(e) => setK(e.target.value)} />
-                <button type="submit" className="btn btn-primary btn-block btn-large">Predict</button>
+                <div className='absolute top-[10%] justify-center text-center'>
+                    <input type="number" id="Temperature" placeholder="Temperature" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={Temperature} onChange={(e) => setTemperature(e.target.value)} />
+                    <input type="number" id="Humidity" placeholder="Humidity" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={Humidity} onChange={(e) => setHumidity(e.target.value)} />
+                    <input type="number" id="Moisture" placeholder="Moisture" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={Moisture} onChange={(e) => setMoisture(e.target.value)} />
+                    <input type="text" id="SoilType" placeholder="Soil Type" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={SoilType} onChange={(e) => setSoilType(e.target.value)} />
+                    <input type="text" id="CropType" placeholder="Crop Type" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={CropType} onChange={(e) => setCropType(e.target.value)} />
+                    <input type="number" id="N" placeholder="N" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={N} onChange={(e) => setN(e.target.value)} />
+                    <input type="number" id="P" placeholder="P" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={P} onChange={(e) => setP(e.target.value)} />
+                    <input type="number" id="K" placeholder="K" required className="border-2 border-black rounded-[25px] text-center p-[10px] m-[8px]" value={K} onChange={(e) => setK(e.target.value)} />
+                    <button type="submit" className="bg-[#B9FFB7] w-[100px] h-[50px] rounded-[10px] p-[10px] m-[8px] ">Predict</button>
+                </div>
             </form>
-            <div>{responseMessage}</div>
-            <div>{error}</div> {/* Display response message */}
+            <div className='absolute top-[35%] left-[40%] text-center'>
+                <h2 className='text-[30px]'>Predicted Fertilizer</h2>
+
+           
+                <div className='text-[20px] mt-2'>
+                    {responseMessage} 
+                </div>
+                
+                {/* <div>{error}</div> Display response message */}
+            </div>
         </div>
     );
 };
